@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Student - SIS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Title Header -->
+  <header id="title-header">
+    <h1>STUDENT INFORMATION SYSTEM</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav id="main-nav">
+    <a href="index.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enrollments.html">Enrollments</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="form-card">
+      <h2>Edit Student</h2>
+
+      <form id="editStudentForm">
+        <div class="form-group">
+          <label>Student Number</label>
+          <input type="text" name="student_number" required>
+        </div>
+
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="first_name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="last_name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Birth Date</label>
+          <input type="date" name="birth_date">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email">
+        </div>
+
+        <input type="hidden" name="student_id">
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Update Student</button>
+          <button type="button" onclick="window.location.href='index.html'" class="btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

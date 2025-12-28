@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enrollments - SIS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Title Header -->
+  <header id="title-header">
+    <h1>STUDENT INFORMATION SYSTEM</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav id="main-nav">
+    <a href="index.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enrollments.html">Enrollments</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <form id="enrollForm">
+      <select name="student_id" id="studentSelect" required></select>
+      <select name="subject_id" id="subjectSelect" required></select>
+      <input type="number" name="grade" placeholder="Grade" step="0.25" min="0.00" max="5.00" required>
+      <button type="submit">Enroll</button>
+    </form>
+
+    <table id="enrollmentTable">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Subject</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Student - SIS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Title Header -->
+  <header id="title-header">
+    <h1>STUDENT INFORMATION SYSTEM</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav id="main-nav">
+    <a href="index.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enrollments.html">Enrollments</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="form-card">
+      <h2>Add New Student</h2>
+
+      <form id="addStudentForm">
+        <div class="form-group">
+          <label>Student Number</label>
+          <input type="text" name="student_number" placeholder="e.g. 04141-01-0101" required>
+        </div>
+
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="first_name" placeholder="First Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="last_name" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Birth Date</label>
+          <input type="date" name="birth_date">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="example@example.com">
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Add Student</button>
+          <button type="button" onclick="window.location.href='index.html'" class="btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
